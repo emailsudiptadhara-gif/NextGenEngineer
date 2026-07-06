@@ -1,95 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>CloudDrive TV</title>
 
-<style>
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#0d1117;
-color:white;
-text-align:center;
-}
-header{
-background:#161b22;
-padding:20px;
-font-size:30px;
-font-weight:bold;
-}
-nav{
-background:#21262d;
-padding:10px;
-}
-nav a{
-color:white;
-text-decoration:none;
-margin:15px;
-font-size:18px;
-}
-.hero{
-padding:60px 20px;
-}
-.btn{
-background:#00b894;
-padding:12px 25px;
-border-radius:8px;
-text-decoration:none;
-color:white;
-font-size:18px;
-}
-.video{
-margin:30px auto;
-width:90%;
-max-width:900px;
-}
-iframe{
-width:100%;
-height:500px;
-border:none;
-border-radius:10px;
-}
-footer{
-background:#161b22;
-padding:20px;
-margin-top:40px;
-}
-</style>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 
 </head>
 
 <body>
 
 <header>
-☁️ CloudDrive TV
-</header>
+
+<div class="logo">
+☁️ <span>CloudDrive TV</span>
+</div>
 
 <nav>
-<a href="#">Home</a>
-<a href="#">Live TV</a>
-<a href="#">Videos</a>
-<a href="#">Playlist</a>
-<a href="#">Contact</a>
+
+<a href="#">🏠 Home</a>
+
+<a href="#">🔴 Live TV</a>
+
+<a href="#">▶️ Videos</a>
+
+<a href="#">📺 Playlist</a>
+
+<a href="#">📷 Gallery</a>
+
+<a href="#">📁 Files</a>
+
+<a href="#">📞 Contact</a>
+
 </nav>
 
-<div class="hero">
-<h1>Welcome to CloudDrive TV</h1>
-<p>Watch Live TV & YouTube Videos</p>
-<a class="btn" href="#">Watch Live</a>
+<div class="search">
+
+<input
+type="text"
+placeholder="Search videos...">
+
+<button>
+
+🔍
+
+</button>
+
 </div>
 
-<div class="video">
+</header>
+
+<section class="hero">
+
+<h1>
+
+Welcome to CloudDrive TV
+
+</h1>
+
+<p>
+
+Watch Live TV, YouTube Videos,
+Movies & Online Streaming
+
+</p>
+
+<div class="hero-buttons">
+
+<button>
+
+▶ Watch Live
+
+</button>
+
+<button>
+
+📺 Watch Videos
+
+</button>
+
+</div>
+
+</section>
+
+<section class="live">
+
+<h2>
+
+🔴 LIVE NOW
+
+</h2>
+
+<div class="live-player">
+
 <iframe
-src="https://www.youtube.com/embed/videoseries?list=PL590L5WQmH8fJ54F1dVxYc6T0Bv2lK9Vx"
+width="100%"
+height="500"
+
+src="https://www.youtube.com/embed/live_stream?channel=CHANNEL_ID"
+
 allowfullscreen>
+
 </iframe>
+
 </div>
 
-<footer>
-© 2026 CloudDrive TV
-</footer>
-
-</body>
-</html>
+</section>
